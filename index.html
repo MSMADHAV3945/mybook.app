@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar">
+        <h1>MYBOOKS</h1>
+    </div>
+
+    <div class="container" id="container">
+        <div class="book-container" id="book-container">
+            <h2>The Complete Works</h2>
+            <h3>Leo Tolstoy</h3>
+            <p>Later in life, he also wrote plays and essays. His two most famous works, the novels War and Peace and Anna Karenina, are acknowledged as two of the greatest novels of all time and a pinnacle of realist fiction. Many consider Tolstoy to have been one of the world's greatest novelists</p>
+            <button class="delete-btn" id="delete-btn" onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title">
+            <input type="text" placeholder="Author Name" id="book-author">
+            <textarea class="description" placeholder="Add description" id="book-descrip"></textarea >
+                <button class="save-btn" id="save-btn">Save</button>
+                <button class="cancel-btn" id="cancel-btn">Cancel</button>
+
+        </form>
+    </div>
+
+    <button class="add-btn" id="add-btn">+</button>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
